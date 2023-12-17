@@ -1,0 +1,22 @@
+{# templates/emails/welcome.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue</title>
+</head>
+<body>
+        
+        {% set pdfUrl = url('f1') %}
+
+        <h1>Bienvenue, {{ username }} !</h1>
+        
+        <p>Merci de remplir ce formulaire pour la suite du processus.</p>
+        
+        <a href="{{ pdfUrl }}">Télécharger le fichier PDF</a>
+
+        <p>Cordialement,<br/>Votre application</p>
+        
+</body>
+</html>
